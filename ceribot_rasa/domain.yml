@@ -1,0 +1,89 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- ask_schedule
+- give_group
+- give_section
+- askhow
+- joke
+- ask_how
+- weather
+- give_spe
+- intent:ask_meteo
+- not_understand
+- ask_movies
+entities:
+- section
+- group
+- groupe
+- spe
+- ville
+slots:
+  group:
+    type: categorical
+    values:
+    - alternant
+    - classique
+  section:
+    type: categorical
+    values:
+    - m1
+    - m2
+  spe:
+    type: categorical
+    values:
+    - ilsen
+    - sicom
+    - ia
+  ville:
+    type: text
+    initial_value: Avignon
+responses:
+  utter_greet:
+  - text: Bonjour! Comment vas-tu?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: Here is something to cheer you up
+  - image: https://static3.depositphotos.com/1005412/218/i/450/depositphotos_2186038-stock-photo-kitten-lays-isolated.jpg
+    text: Here is a cute cat for you :)
+  utter_did_that_help:
+  - text: Est-ce que cela t'as aidé ?
+  utter_happy:
+  - text: Super, continues comme ça!
+  utter_goodbye:
+  - text: Au revoir
+  utter_iamabot:
+  - text: Je suis un robot.
+  utter_ask_section:
+  - text: Quelle est ta section?
+  - text: J'ai besoin de ta section.
+  utter_ask_spe:
+  - text: Quelle est ta spécialité ?
+  utter_ask_group:
+  - text: Quel est ton groupe ?
+  utter_fine_bot:
+  - text: Je vais bien.
+  utter_joke:
+  - text: Why did the chicken cross the road? – To get to the other side!
+  - text: What do you call someone who speaks two languages? – A bilingual. What do
+      you call someone who speaks one language? – An American.
+  utter_weather:
+  - text: It is currently 21°C in Avignon, France
+  utter_something_more:
+  - text: Avez-vous d'autres questions ?
+actions:
+- action_weather
+- action_schedule
+- utter_fine_bot
+- utter_joke
+- utter_weather
+- utter_something_more
+- action_movies
