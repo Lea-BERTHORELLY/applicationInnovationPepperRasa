@@ -1,0 +1,11 @@
+[92mStarting Rasa X in local mode... 🚀[0m
+[94mTraining Core model...[0m
+[94mCore model training completed.[0m
+[94mTraining NLU model...[0m
+[94mTraining Core model...[0m
+[94mNLU model training completed.[0m
+[92mYour Rasa model is trained and saved at '/tmp/20221120-201959.tar.gz'.[0m
+[94mCore model training completed.[0m
+[94mTraining NLU model...[0m
+[94mNLU model training completed.[0m
+[92mYour Rasa model is trained and saved at '/tmp/20221120-202144.tar.gz'.[0m
